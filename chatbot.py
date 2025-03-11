@@ -1,6 +1,6 @@
 import streamlit as st #deploying platform for py projects
 import google.generativeai as genai
-API_KEY = AIzaSyC5zeiEWIscklFBeKY1fkt-2bNGMOCaC10
+API_KEY = "AIzaSyC5zeiEWIscklFBeKY1fkt-2bNGMOCaC10"
 
 genai.configure(api_key=API_KEY)   #for access to our work
 model = enai.GenerativeModel('gemini-1.5-flash')
