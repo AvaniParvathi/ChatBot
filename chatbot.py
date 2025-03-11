@@ -3,7 +3,7 @@ import google.generativeai as genai
 API_KEY = "AIzaSyC5zeiEWIscklFBeKY1fkt-2bNGMOCaC10"
 
 genai.configure(api_key=API_KEY)   #for access to our work
-model = enai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 if "chat" not in st.session_state:
   st.session_state.chat = model.start_chat(history=[])  #to continue chatting in single session
